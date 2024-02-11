@@ -264,6 +264,15 @@ main {}
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
+    .top-title {
+        font-size:50%;
+    }
+
+    .top>.top-logo {
+        width: 30%;
+    }
+    
+
     .right-side-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -282,6 +291,13 @@ main {}
 }
 
 @media screen and (max-width:576px) {
+    .top-title {
+        font-size: 40%;
+    }
+    .top>.top-logo {
+        width: 30%;
+    }
+    
     .right-side-grid {
         grid-template-columns: repeat(1, 1fr);
     }
