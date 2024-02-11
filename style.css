@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    background-image: url(logo&bg/patternBG.png);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.banner {}
+
+.container {
+    width: 65vw;
+    margin: 20px auto;
+    padding: 0;
+    box-shadow: 0px 0px 5px 1px gray;
+}
+
+.header {
+    width: 100%;
+
+
+}
+
+/* <!-- top banner header  --> */
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: #eeebeb;
+    border: 5px solid green;
+
+}
+
+.top-title {
+    /* border: 1px solid red; */
+    font-size: 80%;
+    text-align: center;
+}
+
+.top>.top-logo {
+    /* border: 1px solid red; */
+    width: 10%;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.top-logo img {
+    width: 100%;
+    /* border: 1px solid black; */
+
+    margin: 10px;
+}
+
+
+
+/* navbar section styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    border: 1px solid orange;
+    height: 50px;
+}
+
+.nav-ul {
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0px 10px;
+
+}
+
+.nav-ul li {
+    list-style: none;
+}
+
+.nav-ul li a {
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: skyblue;
+}
+
+.nav-ul li a:hover {
+    background-color: transparent;
+    box-shadow: 0px 0px 5px 1px gray;
+}
+
+
+/* main section styles  */
+main {}
+
+/* marquee section styles */
+
+.marquee-box {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: green;
+    margin: 0px;
+
+}
+
+.marquee-news {
+    margin: 10px;
+    font-size: 15px;
+    color: #ffffff;
+    width: 100px;
+    /* border: 1px solid rgb(255, 0, 0); */
+}
+
+.marquee {
+    /* border: 1px solid rgb(72, 255, 0); */
+    box-sizing: border-box;
+}
+
+.marquee p a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+
+/* gird section styles */
+.grid-section {
+    text-align: center;
+    background-color: rgb(231, 230, 231);
+    border: 2px solid black;
+}
+
+.left-side-grid {
+    border: 5px solid green;
+    padding: 10px;
+}
+
+
+.left-side-grid img {
+    
+}
+
+.left-side-grid img:hover {
+    box-shadow: 0px 0px 5px 1px gray;
+
+}
+
+
+.right-side-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    border: 5px solid green;
+}
+
+.grid-box {
+    padding: 20px;
+    background-color: rgb(245, 241, 241);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px gray;
+
+}
+
+.grid-box img {
+    width: 160px;
+    border-radius: 10px;
+}
+
+.grid-box img:hover {
+    box-shadow: 0px 0px 5px 1px gray;
+
+}
+
+
+.name {}
+
+.education {
+    font-size: 12px;
+    margin-top: -15px;
+}
+
+.position {
+    font-size: 12px;
+    margin-top: -0px
+}
+
+.technology,
+.phone,
+.email {
+
+    color: orange;
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.phone span,
+.email span {
+    font-weight: 900;
+}
+
+
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .right-side-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:576px) {
+    .right-side-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
