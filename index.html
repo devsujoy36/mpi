@@ -27,31 +27,51 @@
             </div>
             
 
-
-
+            
+            <!-- navbar section  -->
+            <nav class="navbar">
+                <ul>
+                    <li class="hideOnMobile"><a href="#">Home</a></li>
+                    <li class="hideOnMobile"><a href="http://mpi.edu.bd/m/principal">About Us</a></li>
+                    <li class="hideOnMobile"><a href="http://mpi.edu.bd/m/teachers/Computer">Teacher's Info</a></li>
+                    <li class="hideOnMobile"><a href="http://mpi.edu.bd/m/students/Computer">Student's Info</a></li>
+                    <li class="hideOnMobile"><a href="http://mpi.edu.bd/m/routin">Class Routin</a></li>
+                    <li class="hideOnMobile"><a href="http://mpi.edu.bd/notice/">Notice</a></li>
+                    <li class="hideOnMobile"><a href="http://mpi.edu.bd/m/elearning">E-Learning</a></li>
+                    <li class="hideOnMobile"><a href="http://mpi.edu.bd/m/gallery">Gallry</a></li>
+                    <li class="hideOnMobile"><a href="http://mpi.edu.bd/m/contactus">Communication</a></li>
+                    <li class="hideOnMobile"><a href="http://mpi.edu.bd/m/apa">APA</a></li>
+                    <li class="hideOnMobile"><a href="http://mpi.edu.bd/m/jobplacement">Job Placement Cell</a></li>
+                    <li class="hideOnMobile"><a href="http://testimonial.mpi.edu.bd/">Academic Certificate</a></li>
+                    <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                            width="24">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                    <li><a href="http://mpi.edu.bd/m/principal">About Us</a></li>
+                    <li><a href="http://mpi.edu.bd/m/teachers/Computer">Teacher's Info</a></li>
+                    <li><a href="http://mpi.edu.bd/m/students/Computer">Student's Info</a></li>
+                    <li><a href="http://mpi.edu.bd/m/routin">Class Routin</a></li>
+                    <li><a href="http://mpi.edu.bd/notice/">Notice</a></li>
+                    <li><a href="http://mpi.edu.bd/m/elearning">E-Learning</a></li>
+                    <li><a href="http://mpi.edu.bd/m/gallery">Gallry</a></li>
+                    <li><a href="http://mpi.edu.bd/m/contactus">Communication</a></li>
+                    <li><a href="http://mpi.edu.bd/m/apa">APA</a></li>
+                    <li><a href="http://mpi.edu.bd/m/jobplacement">Job Placement Cell</a></li>
+                    <li><a href="http://testimonial.mpi.edu.bd/">Academic Certificate</a></li>
+                    
+                </ul>
+                
+            </nav>
             
 
 
 
 
-
-
-
-            <!-- navbar section  -->
-            <nav class="navbar">
-                <a href="">Home</a>
-                <a href="http://mpi.edu.bd/m/principal">About Us</a>
-                <a href="http://mpi.edu.bd/m/teachers/Computer">Teacher's Info</a>
-                <a href="http://mpi.edu.bd/m/students/Computer">Student's Info</a>
-                <a href="http://mpi.edu.bd/m/routin">Class Routin</a>
-                <a href="http://mpi.edu.bd/notice/">Notice</a>
-                <a href="http://mpi.edu.bd/m/elearning">E-Learning</a>
-                <a href="http://mpi.edu.bd/m/gallery">Gallry</a>
-                <a href="http://mpi.edu.bd/m/contactus">Communication</a>
-                <a href="http://mpi.edu.bd/m/apa">APA</a>
-                <a href="http://mpi.edu.bd/m/jobplacement">Job Placement Cell</a>
-                <a href="http://testimonial.mpi.edu.bd/">Academic Certificate</a>
-            </nav>
+            
         </header>
 
         <main>
@@ -203,7 +223,16 @@
 
 
 
-
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
 </body>
 
 </html>
