@@ -80,7 +80,7 @@ nav ul {
     width: 100%;
     list-style: none;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
@@ -268,12 +268,15 @@ main {}
     .right-side-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .hideOnMobile {
         display: none;
     }
+
     .menu-button {
         display: block;
     }
+
     nav ul {
         justify-content: flex-end;
     }
@@ -283,16 +286,24 @@ main {}
     .right-side-grid {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .sidebar {
         width: 100%;
     }
+
+    .sidebar a {
+        width: 100%;
+    }
+
     .menu-button {
         display: block;
         justify-content: center;
     }
+
     .hideOnMobile {
         display: none;
 
     }
-    
+
 }
+
